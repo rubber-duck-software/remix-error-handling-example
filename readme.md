@@ -43,6 +43,6 @@ There are two forms in this example site.
    be generalized, so that an app wanted to implement this error handling on
    every form would be greatly burdened by boilerplate.
 
-To run this repository, simply clone the repo locally, run `pnpm i`, and lastly
-`pnpm dev` or if you don't want to run the site locally, check out
+To run this repository, simply clone the repo locally, run `yarn install`, and lastly
+`yarn dev` or if you don't want to run the site locally, check out
 https://jade-fudge-07dcb3.netlify.app
