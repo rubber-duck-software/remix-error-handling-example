@@ -2,16 +2,16 @@ import { redirect } from "@remix-run/node";
 import { useRouteError } from "@remix-run/react";
 import React from "react";
 
-export async function loader() {
-  return redirect("..");
-}
-
 export async function action() {
   try {
     return redirect("/success");
   } catch (e) {
     return redirect("..");
   }
+}
+
+export default function Component() {
+  return null;
 }
 
 export function ErrorBoundary() {
