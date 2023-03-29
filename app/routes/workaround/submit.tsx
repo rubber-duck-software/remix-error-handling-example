@@ -1,7 +1,5 @@
-import { ActionArgs } from "@remix-run/node";
 import { redirect } from "@remix-run/node";
-import { json } from "@remix-run/node";
-import { useCatch } from "@remix-run/react";
+import { useRouteError } from "@remix-run/react";
 import React from "react";
 
 export async function loader() {
@@ -16,7 +14,8 @@ export async function action() {
   }
 }
 
-export function ErrorBoundary({ error }) {
+export function ErrorBoundary() {
+  const error = useRouteError();
   const [open, setOpen] = React.useState(true);
   React.useEffect(() => {
     setOpen(true);

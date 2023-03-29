@@ -44,4 +44,5 @@ There are two forms in this example site.
    every form would be greatly burdened by boilerplate.
 
 To run this repository, simply clone the repo locally, run `pnpm i`, and lastly
-`pnpm dev`.
+`pnpm dev` or if you don't want to run the site locally, check out
+https://jade-fudge-07dcb3.netlify.app

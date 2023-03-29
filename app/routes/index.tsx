@@ -1,7 +1,6 @@
 import { redirect } from "@remix-run/node";
-import { json, ActionArgs } from "@remix-run/node";
-import { Form, Link, useActionData } from "@remix-run/react";
-import React from "react";
+import { ActionArgs } from "@remix-run/node";
+import { Form, Link } from "@remix-run/react";
 
 export async function action({ request }: ActionArgs) {
   try {
